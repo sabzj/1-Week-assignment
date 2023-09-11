@@ -1,0 +1,28 @@
+p {
+    margin-top: 3em;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    position: relative;
+    transition: ease-in;
+}
+
+a[data-tooltip="tooltip"]::after {
+
+position: absolute;
+background-color: red
+color: white;
+outline: none;
+opacity:0;
+left: 0;
+bottom: 100%;
+transition: opacity 0.3s;
+}
+
+a[data-tooltip="tooltip"]:hover::after {
+    opacity: 1;
+    
+}
