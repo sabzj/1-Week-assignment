@@ -1,0 +1,36 @@
+
+    * {
+        background-color: rgb(219, 214, 214);
+    }
+
+    .section1 {
+        background-color: beige;
+        /* overflow: hidden; */
+        width: 120px;
+        height: 70px;
+        padding-right: 10px; 
+        margin: 30px;
+        position: relative;
+        animation-name: anim;
+        animation-duration: 3s;
+        /* animation-direction: reverse; */
+    }
+
+    .section1:hover {
+        background-color: blueviolet;
+        transform: translatey(0px, 180px);
+
+        /* transform: rotateY 90; */
+
+    }
+
+    .section1:hover::after {
+        content: "Cool";
+        text-align: center;
+        transform:translate (90px);
+
+    }
+
+
+
+

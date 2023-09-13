@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+}
+
+.box {
+    background-color: beige;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    animation-name: scan;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+
+.box::after {
+    content: "";
+    background-color: aqua;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    transition: 3s;
+    transition-property: width;
+    margin: 0;
+    padding:0;
+}
+
+.box:hover {
+    overflow: hidden;
+}
+
+.box:hover::after {
+    overflow: visible;
+    width: 100%;
+}
+
+@keyframes scan {
+    to { width 200px;
+    }
+
+
+
+}
